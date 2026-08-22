@@ -1,0 +1,26 @@
+package day5.parking;
+
+import java.util.Scanner;
+
+import day5parking.Car;
+import day5parking.ParkingRecord;
+
+public class TestParkingRecord3 {
+	public static void main(String[] args) {
+		
+		Car car = new Car(4,"1234-AB");
+		System.out.println("準備停車 ->"+car);
+		
+		ParkingRecord record=new ParkingRecord(car,1,2);
+		System.out.println("開始停車 ->"+record);
+		
+		
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("時間計算中,若要停止時間請按下 enter 鍵...");
+		scanner.nextLine();
+		
+		System.out.println("停車費");
+		record.showInfo();
+	}
+
+}
